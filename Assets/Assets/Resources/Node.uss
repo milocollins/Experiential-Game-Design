@@ -1,0 +1,3 @@
+DialogueNode #title{
+	background-color: rgba(27, 163, 156, 1);
+}
