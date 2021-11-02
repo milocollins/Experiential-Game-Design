@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager theBoss;
     public bool isPaused = false;
+    private bool inputLock = false;
     private void Awake()
     {
         theBoss = this;
@@ -14,9 +15,16 @@ public class GameManager : MonoBehaviour
     {
         
     }
-
+    public void InputToggle()
+    {
+        inputLock = !inputLock;
+    }
     void Update()
     {
+        if (!inputLock)
+        {
+
+        }
         if (Input.GetButtonDown("Pause"))
         {
             Utilities.Pause();

@@ -19,6 +19,9 @@ public static class Utilities
             case "Npc":
                 DialogueManager.manager.StartDialogue(t);
                 break;
+            case "Investigation":
+                Investigation.theInvestigation.ToggleInvestigation();
+                break;
             default:
                 break;
         }
