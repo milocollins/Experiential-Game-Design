@@ -23,7 +23,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: 91766655fb0812b46a206f6c962810ec, type: 2}
   notes:
   - Having an affair with Toby
   - Witholding towards her children

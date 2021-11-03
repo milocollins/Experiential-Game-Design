@@ -23,7 +23,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: d208ddaced10b2f43a82c98f9b07b6a6, type: 2}
   notes:
   - Alex's "Lover"
   - Jilted by Alex

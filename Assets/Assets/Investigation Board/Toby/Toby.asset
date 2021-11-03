@@ -23,7 +23,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: a01c52c1b9e0f77428cf5c6f4db5b08c, type: 2}
+  - {fileID: 11400000, guid: 2bac67f5a6433154882301ebfb10b92f, type: 2}
   notes:
   - Having an affair with Mary
   - Alex's biological Father

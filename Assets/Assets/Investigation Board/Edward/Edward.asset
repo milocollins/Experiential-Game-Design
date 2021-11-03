@@ -23,7 +23,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: 7b5a4b1d6e6b6e24d8778fe6facb0c00, type: 2}
+  - {fileID: 11400000, guid: 218ddee503cb0b342b2dda30e7b7f06e, type: 2}
+  - {fileID: 11400000, guid: 896e63e024136ed4188601cccfe25714, type: 2}
   notes:
   - Despised by his Mother
   - He's going broke

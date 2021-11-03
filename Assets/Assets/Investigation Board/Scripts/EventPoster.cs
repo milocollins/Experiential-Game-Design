@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EventPoster : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Image locationImage;
+    public Text myLocation;
+    public Text participants;
+    public Text time;
+    public Text eventAbstract;
+    public List<Text> notes;
 
-    // Update is called once per frame
-    void Update()
+    public void ResetPoster()
     {
-        
+
+    }
+    public void SetupPoster()
+    {
+
     }
 }

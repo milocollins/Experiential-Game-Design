@@ -23,7 +23,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: e6cd40562cd3f8b49a219abbd400661a, type: 2}
+  - {fileID: 11400000, guid: dd11cf9624fc8dc46bca02df4abd15b1, type: 2}
+  - {fileID: 11400000, guid: 04186af6d70bb3946b42a5aec3f70267, type: 2}
   notes:
   - Has terminal lung cancer
   - Inhereted and further built upon his Father's already surmountable estate

@@ -23,7 +23,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  myMotives: []
+  myMotives:
+  - {fileID: 11400000, guid: cc66cebf871f7ac4d895bc70b13806b6, type: 2}
+  - {fileID: 11400000, guid: 63ec5be688e095547ba8d78518a82a37, type: 2}
+  - {fileID: 11400000, guid: a8adebf07c7d82c4f8d84bcec0de1381, type: 2}
   notes:
   - Lives off of her Father's support
   - Apathetic towards her brother's death
