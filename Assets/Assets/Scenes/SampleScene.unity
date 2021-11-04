@@ -503,9 +503,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Investigation_Board
       objectReference: {fileID: 0}
-    - target: {fileID: 6630525189974551613, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 1821847711}
+    - target: {fileID: 6630525189974551612, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}

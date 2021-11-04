@@ -10,5 +10,5 @@ public class CharacterProfile : ScriptableObject
     public Sprite portrait;
     public InvestigationEvent[] myEvents = new InvestigationEvent[7];
     public List<Motive> myMotives;
-    public List<string> notes;
+    public List<CharacterNote> notes;
 }

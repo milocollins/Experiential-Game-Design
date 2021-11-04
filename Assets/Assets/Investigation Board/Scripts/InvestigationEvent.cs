@@ -7,11 +7,12 @@ public class InvestigationEvent : ScriptableObject
 {
     public bool isLocked = true;
     public int timeIndex;
+    public string time;
     public Sprite locationImage;
     public string locationName;
     public string eventAbstract;
-    public List<string> participants;
-    public List<string> notes;
+    public string participants;
+    public List<EventNote> notes;
 
     public void Unlock()
     {

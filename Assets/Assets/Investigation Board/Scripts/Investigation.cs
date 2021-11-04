@@ -12,6 +12,7 @@ public class Investigation : MonoBehaviour
     public Button[] suspectEvents = new Button[7];
     public Button[] profileButtons = new Button[7];
     public GameObject[] motiveGOs = new GameObject[3];
+    public GameObject currentSuspect;
     public EventPoster eventPoster;
     public ProfilePoster profilePoster;
     private CharacterProfile currentProfile;
@@ -25,7 +26,6 @@ public class Investigation : MonoBehaviour
     }
     private void Start()
     {
-        
         myCamera.enabled = false;
     }
     private void Update()
@@ -57,22 +57,68 @@ public class Investigation : MonoBehaviour
             Time.timeScale = 1f;
             Cursor.lockState = CursorLockMode.Locked;
         }
+        //Reset suspect, motives, posters and events
+        foreach (Button b in suspectEvents)
+        {
+            b.GetComponent<ButtonHandler>().ResetEvent();
+        }
+        currentSuspect.transform.GetChild(0).GetComponent<Image>().sprite = dummyImage;
+        currentSuspect.transform.GetChild(1).GetComponent<Text>().text = "?";
+        profilePoster.ResetPoster();
+        eventPoster.ResetPoster();
+        ResetMotives();
     }
-    private void GetMotives()
+    private void ResetMotives()
     {
-
+        for (int i = 0; i < motiveGOs.Length; i++)
+        {
+            motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = null;
+            motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = null;
+            motiveGOs[i].SetActive(false);
+        }
     }
-    public void SelectMotive(Motive m)
+    private void GetMotives(CharacterProfile c)
     {
-
+        ResetMotives();
+        for (int i = 0; i < motiveGOs.Length; i++)
+        {
+            if (c.myMotives[i] && !c.myMotives[i].isLocked)
+            {
+                motiveGOs[i].SetActive(true);
+                motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = c.myMotives[i].title;
+                motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = c.myMotives[i].description;
+            }
+        }
     }
     public void SelectSuspect(CharacterProfile c)
     {
-        
+        profilePoster.SetupPoster(c);
+        currentSuspect.transform.GetChild(0).GetComponent<Image>().sprite = c.portrait;
+        currentSuspect.transform.GetChild(1).GetComponent<Text>().text = c.name;
+        for (int i = 0; i < suspectEvents.Length; i++)
+        {
+            if (c.myEvents[i] != null)
+            {
+                GetMotives(c);
+                Debug.Log("EVENT NOT EMPTY");
+                if (!c.myEvents[i].isLocked)
+                {
+                    suspectEvents[i].GetComponent<ButtonHandler>().SetupEvent(c.myEvents[i]);
+                }
+                else
+                {
+                    suspectEvents[i].GetComponent<ButtonHandler>().ResetEvent();
+                }
+            }
+            else
+            {
+                Debug.Log("NULL ERROR");
+            }
+        }
     }
     public void SelectEvent(InvestigationEvent e)
     {
-
+        eventPoster.SetupPoster(e);
     }
     
 }
