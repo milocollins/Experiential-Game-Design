@@ -16,15 +16,15 @@ MonoBehaviour:
   relation: The Gardener
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0bb1a273b8bfeae4dba986a9856d1499, type: 2}
+  - {fileID: 11400000, guid: 430d6a13c21d63741af633752071f01d, type: 2}
+  - {fileID: 11400000, guid: 6c51ec27697041241985a5fde05d66fc, type: 2}
+  - {fileID: 11400000, guid: 9ad12ada5f27e114480778fde0b6f4f2, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: cc4fad55be2e67f4eaa6fbbdfb21166d, type: 2}
+  - {fileID: 11400000, guid: e36c69815e683824183b8ca6198cd964, type: 2}
   myMotives:
   - {fileID: 11400000, guid: e40cb05b09b3ef849958841121e42f08, type: 2}
   notes:
-  - Romantically inolved with Alice
-  - Frequently mocked by Alex
+  - {fileID: 0}
+  - {fileID: 0}

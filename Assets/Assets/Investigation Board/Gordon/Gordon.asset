@@ -16,18 +16,18 @@ MonoBehaviour:
   relation: Father
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0bb1a273b8bfeae4dba986a9856d1499, type: 2}
+  - {fileID: 11400000, guid: 1d6a204f974b77046bae2f4c961fbd12, type: 2}
+  - {fileID: 11400000, guid: da538db7640639848a478df8e3482873, type: 2}
+  - {fileID: 11400000, guid: 4731d0ad5a6f982439dcb5ee2c325835, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: 03bc20e633553884ebe839f0c807d0c4, type: 2}
+  - {fileID: 11400000, guid: 3d266719dd90d514a961c383a5f8333d, type: 2}
   myMotives:
   - {fileID: 11400000, guid: e6cd40562cd3f8b49a219abbd400661a, type: 2}
   - {fileID: 11400000, guid: dd11cf9624fc8dc46bca02df4abd15b1, type: 2}
   - {fileID: 11400000, guid: 04186af6d70bb3946b42a5aec3f70267, type: 2}
   notes:
-  - Has terminal lung cancer
-  - Inhereted and further built upon his Father's already surmountable estate
-  - Very conservative and religious
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

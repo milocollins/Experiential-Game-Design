@@ -19,6 +19,7 @@ public class Investigation : MonoBehaviour
     private Button currentMotive;
     private InvestigationEvent currentEvent;
     public Sprite dummyImage;
+    public CharacterProfile victimProfile;
 
     void Awake()
     {
@@ -67,28 +68,45 @@ public class Investigation : MonoBehaviour
         profilePoster.ResetPoster();
         eventPoster.ResetPoster();
         ResetMotives();
+        UpdateCriticalEvents();
+    }
+    private void UpdateCriticalEvents()
+    {
+        for (int i = 0; i < criticalEvents.Length; i++)
+        {
+            criticalEvents[i].GetComponent<ButtonHandler>().SetupEvent(victimProfile.myEvents[i]);
+        }
     }
     private void ResetMotives()
     {
         for (int i = 0; i < motiveGOs.Length; i++)
         {
-            motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = null;
-            motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = null;
-            motiveGOs[i].SetActive(false);
+            if (motiveGOs[i].activeInHierarchy)
+            {
+                motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = null;
+                motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = null;
+                motiveGOs[i].SetActive(false);
+            }
         }
+        return;
     }
     private void GetMotives(CharacterProfile c)
     {
         ResetMotives();
-        for (int i = 0; i < motiveGOs.Length; i++)
+        if (c.myMotives.Count > 0)
         {
-            if (c.myMotives[i] && !c.myMotives[i].isLocked)
+            Debug.Log("Has Motive");
+            for (int i = 0; i < c.myMotives.Count; i++)
             {
-                motiveGOs[i].SetActive(true);
-                motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = c.myMotives[i].title;
-                motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = c.myMotives[i].description;
+                if (!c.myMotives[i].isLocked)
+                {
+                    motiveGOs[i].SetActive(true);
+                    motiveGOs[i].transform.GetChild(0).GetComponent<Text>().text = c.myMotives[i].title;
+                    motiveGOs[i].transform.GetChild(1).GetComponent<Text>().text = c.myMotives[i].description;
+                }
             }
         }
+        return;
     }
     public void SelectSuspect(CharacterProfile c)
     {

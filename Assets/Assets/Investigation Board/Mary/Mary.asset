@@ -16,16 +16,16 @@ MonoBehaviour:
   relation: Mother
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e59b0931a13bb104495531dcaa679555, type: 2}
+  - {fileID: 11400000, guid: b68a22cbc4c4b344d9b98bf4ba2c7ebb, type: 2}
+  - {fileID: 11400000, guid: 0335348422986674087267993197952d, type: 2}
+  - {fileID: 11400000, guid: 872a6ed3b9328b145a23a0199d5206ea, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: 5f66702e4ceeb5741898d5a9e736502b, type: 2}
+  - {fileID: 11400000, guid: 811d480ea2571ee4aa2302fd8caa4114, type: 2}
   myMotives:
   - {fileID: 11400000, guid: 91766655fb0812b46a206f6c962810ec, type: 2}
   notes:
-  - Having an affair with Toby
-  - Witholding towards her children
-  - Will control Gordon's estate after he dies
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

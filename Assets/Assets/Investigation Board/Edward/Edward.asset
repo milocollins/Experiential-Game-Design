@@ -16,18 +16,18 @@ MonoBehaviour:
   relation: Younger Brother
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0bb1a273b8bfeae4dba986a9856d1499, type: 2}
+  - {fileID: 11400000, guid: 683d2da9c6e4c0940a25c643c03fc7fe, type: 2}
+  - {fileID: 11400000, guid: da538db7640639848a478df8e3482873, type: 2}
+  - {fileID: 11400000, guid: 06f7cbe147d1bfa499a38861288a881d, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: ae51bf4f95b25de43b4ccf2a8577e1fc, type: 2}
+  - {fileID: 11400000, guid: 2cacb0bdbbc87c14b853da17bfa736dc, type: 2}
   myMotives:
   - {fileID: 11400000, guid: 7b5a4b1d6e6b6e24d8778fe6facb0c00, type: 2}
   - {fileID: 11400000, guid: 218ddee503cb0b342b2dda30e7b7f06e, type: 2}
   - {fileID: 11400000, guid: 896e63e024136ed4188601cccfe25714, type: 2}
   notes:
-  - Despised by his Mother
-  - He's going broke
-  - A religious family man
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -16,15 +16,15 @@ MonoBehaviour:
   relation: The Maid
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 812fd8c362079ff4aad1b9405a5dc231, type: 2}
+  - {fileID: 11400000, guid: 52024fd1f1ebc4946b4369fba11f5dc8, type: 2}
+  - {fileID: 11400000, guid: 9bb1739462db35d4c80dfbb630e505cd, type: 2}
+  - {fileID: 11400000, guid: dd1a2e29a9a6d4343b36877b861efce2, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: 08eac096889ce1c4e86a52241ab5faa4, type: 2}
+  - {fileID: 11400000, guid: b8b517440de510245bba08191553addf, type: 2}
   myMotives:
   - {fileID: 11400000, guid: d208ddaced10b2f43a82c98f9b07b6a6, type: 2}
   notes:
-  - Alex's "Lover"
-  - Jilted by Alex
+  - {fileID: 0}
+  - {fileID: 0}

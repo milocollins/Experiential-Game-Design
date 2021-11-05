@@ -30,7 +30,14 @@ public class ButtonHandler : MonoBehaviour
     public void SetupEvent(InvestigationEvent e)
     {
         myEvent = e;
-        myImage.sprite = e.locationImage;
+        if (!e.isLocked)
+        {
+            myImage.sprite = e.locationImage;
+        }
+        else
+        {
+            myImage.sprite = Investigation.theInvestigation.dummyImage;
+        }
     }
     public void ResetEvent()
     {

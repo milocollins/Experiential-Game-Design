@@ -16,20 +16,20 @@ MonoBehaviour:
   relation: Younger Sister
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: d52988ed4fc349e45afbed96d2531787, type: 2}
+  - {fileID: 11400000, guid: 200dd3b8c1ccbe141b7c655898e4d7d9, type: 2}
+  - {fileID: 11400000, guid: 6c51ec27697041241985a5fde05d66fc, type: 2}
+  - {fileID: 11400000, guid: ea74bb3b0a91ea04fb3e756e2ab6146a, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: cc4fad55be2e67f4eaa6fbbdfb21166d, type: 2}
+  - {fileID: 11400000, guid: e36c69815e683824183b8ca6198cd964, type: 2}
   myMotives:
   - {fileID: 11400000, guid: cc66cebf871f7ac4d895bc70b13806b6, type: 2}
   - {fileID: 11400000, guid: 63ec5be688e095547ba8d78518a82a37, type: 2}
   - {fileID: 11400000, guid: a8adebf07c7d82c4f8d84bcec0de1381, type: 2}
   notes:
-  - Lives off of her Father's support
-  - Apathetic towards her brother's death
-  - Only close with Grant and Gordon
-  - Loathed by her Mother
-  - Romantically involed with Grant
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

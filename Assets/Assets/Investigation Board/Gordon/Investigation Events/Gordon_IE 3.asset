@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b81f4499ea6adb499deece90fe3245f, type: 3}
+  m_Name: Gordon_IE 3
+  m_EditorClassIdentifier: 
+  isLocked: 1
+  timeIndex: 3
+  time: 6:00 PM / 6:30 PM
+  locationImage: {fileID: 0}
+  locationName: Study
+  eventAbstract: 
+  participants: Gordon / Alex, Gordon
+  notes:
+  - {fileID: 11400000, guid: 00482cac91393484d8015177bab6373f, type: 2}
+  - {fileID: 11400000, guid: 62d460c7d2be79f4aa84a8e635bd10e7, type: 2}

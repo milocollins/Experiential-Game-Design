@@ -16,17 +16,17 @@ MonoBehaviour:
   relation: The Butler
   portrait: {fileID: 0}
   myEvents:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0a1741ed11a420f4cbfc50ca0eb30e8c, type: 2}
+  - {fileID: 11400000, guid: 430d6a13c21d63741af633752071f01d, type: 2}
+  - {fileID: 11400000, guid: 0335348422986674087267993197952d, type: 2}
+  - {fileID: 11400000, guid: fc066a6b312292c44827299e1ddfcd7e, type: 2}
+  - {fileID: 11400000, guid: 60954b48e8554344593f0b02d3ed5dff, type: 2}
+  - {fileID: 11400000, guid: 08eac096889ce1c4e86a52241ab5faa4, type: 2}
+  - {fileID: 11400000, guid: 811d480ea2571ee4aa2302fd8caa4114, type: 2}
   myMotives:
   - {fileID: 11400000, guid: a01c52c1b9e0f77428cf5c6f4db5b08c, type: 2}
   - {fileID: 11400000, guid: 2bac67f5a6433154882301ebfb10b92f, type: 2}
   notes:
-  - Having an affair with Mary
-  - Alex's biological Father
-  - From a poor background
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -503,9 +503,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Investigation_Board
       objectReference: {fileID: 0}
+    - target: {fileID: 3331193384217574380, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 92
+      objectReference: {fileID: 0}
     - target: {fileID: 6630525189974551612, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8421357961955519406, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
+      propertyPath: myProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: bce2a6cd68b36594c9de22f769ff192a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 020606d3d67ca1c44876e1669d43e9cb, type: 3}
