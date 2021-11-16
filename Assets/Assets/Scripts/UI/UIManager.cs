@@ -9,8 +9,8 @@ public class UIManager : MonoBehaviour
     public static UIManager ui;
     public Text tooltip;
     public bool tooltipBool = false;
-    public GameObject dialoguePanel;
     public Text interactiveSubtitle;
+    public GameObject dialoguePanel;
 
     [Header("Dialogue Buttons")]
     public List<GameObject> dialogueButtons = new List<GameObject>();

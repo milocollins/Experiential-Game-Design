@@ -6,13 +6,17 @@ using UnityEngine.AI;
 public class CharacterHandler : MonoBehaviour
 {
     public string npcName;
-    public DialogueContainer myDialogue;
+    //public DialogueContainer myDialogue;
     public CharacterProfile myProfile;
     private NavMeshAgent myAgent;
     public Camera myCamera;
     private Animator myAnim;
     public List<Transform> targets = new List<Transform>();
     private bool idling = false;
+    public enum Emotion
+    {
+
+    }
     public enum State
     {
         Walking,
@@ -87,10 +91,10 @@ public class CharacterHandler : MonoBehaviour
             myAnim.SetBool("Moving", false);
         }
     }
-    public DialogueContainer GetMyDialogue()
-    {
-        return myDialogue;
-    }
+    //public DialogueContainer GetMyDialogue()
+    //{
+    //    return myDialogue;
+    //}
     public Camera GetMyCamera()
     {
         return myCamera;
