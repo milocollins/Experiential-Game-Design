@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -83,6 +84,17 @@ public class DialogueGraphView : GraphView
         var button = new Button(clickEvent: () => { AddChoicePort(dialogueNode); });
         button.text = "New Choice";
         dialogueNode.titleContainer.Add(button);
+        var motiveScriptable = new ObjectField
+        {
+            objectType = typeof(ScriptableObject),
+
+        };
+        //motiveScriptable.RegisterValueChangedCallback(evt =>
+        //{
+        //    dialogueNode.motive = evt.newValue;
+        //});
+        motiveScriptable.SetValueWithoutNotify(dialogueNode.motive);
+        dialogueNode.mainContainer.Add(motiveScriptable);
 
         var textField = new TextField(string.Empty);
         textField.RegisterValueChangedCallback(evt =>

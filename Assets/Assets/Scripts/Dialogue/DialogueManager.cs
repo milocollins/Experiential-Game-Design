@@ -92,10 +92,32 @@ public class DialogueManager : MonoBehaviour
     {
         currentDialogueNode = n;
         //Currently empty at start
+        //PLAY The sfx
         UIManager.ui.SetDialogueSubtitle(currentDialogueNode.DialogueText);
         yield return new WaitForSeconds(2f);
+        UnlockDialogueOptions(n);
         //WAIT for n.dialogue audioclip length
         GetDialogueOptions(n);
+    }
+    public void UnlockDialogueOptions(DialogueNodeData n)
+    {
+        //Unlocks from a dialogue node
+        if (n.motive)
+        {
+            n.motive.isLocked = false;
+        }
+        if (n.EN)
+        {
+            n.EN.isLocked = false;
+        }
+        if (n.IE)
+        {
+            n.IE.isLocked = false;
+        }
+        if (n.CN)
+        {
+            n.CN.isLocked = false;
+        }
     }
     public void StartDialogue(Transform t)
     {

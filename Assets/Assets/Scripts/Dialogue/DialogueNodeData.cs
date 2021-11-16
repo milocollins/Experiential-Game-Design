@@ -11,4 +11,8 @@ public class DialogueNodeData
     public string DialogueText;
     public bool EntryPoint = false;
     public Vector2 Position;
+    public Motive motive;
+    public InvestigationEvent IE;
+    public CharacterNote CN;
+    public EventNote EN;
 }
