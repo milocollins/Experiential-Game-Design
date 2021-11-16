@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public static PlayerController thePlayer;
     private CharacterController myController;
     private bool inputLock = false;
+    public Camera dialogueCamera;
+    public CharacterProfile myProfile;
     [Header ("Movement")]
     public float walkSpeed;
     public float crouchWalkSpeed;

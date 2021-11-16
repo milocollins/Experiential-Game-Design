@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,36 +7,61 @@ using UnityEngine.AI;
 public class CharacterHandler : MonoBehaviour
 {
     public string npcName;
-    //public DialogueContainer myDialogue;
     public CharacterProfile myProfile;
+    public DialogueGraph dialogue;
     private NavMeshAgent myAgent;
-    public Camera myCamera;
     private Animator myAnim;
-    public List<Transform> targets = new List<Transform>();
     private bool idling = false;
-    public enum Emotion
-    {
-
-    }
+    //Behaviour
+    [Header("Behaviour")]
+    public List<Transform> targets = new List<Transform>();
+    public Transform currentTarget;
     public enum State
     {
-        Walking,
         Idle,
+        Walking,
         Talking
     }
     public State currentState { get; set; }
-    public Transform currentTarget;
+    //Dialogue
+    [Header("Dialogue")]
+    //public DialogueContainer myDialogue;
+    public Camera dialogueCamera;
+    public AudioClip[] emotionSFX = new AudioClip[6];
+    public AnimationClip[] emotionAnim = new AnimationClip[6];
+    private Dictionary<Emotion, AudioClip> emotionSfxDictionary = new Dictionary<Emotion, AudioClip>();
+    private Dictionary<Emotion, AnimationClip> emotionAnimDictionary = new Dictionary<Emotion, AnimationClip>();
+    public enum Emotion
+    {
+        Agree = 0,
+        Angry = 1,
+        Disagree = 2,
+        Happy = 3,
+        Neutral = 4,
+        Sad = 5
+    }
     private void Awake()
     {
+        npcName = myProfile.name;
         //myCamera.enabled = false;
+        dialogueCamera.enabled = false;
         myAnim = GetComponent<Animator>();
         myAgent = GetComponent<NavMeshAgent>();
-        myCamera = GetComponentInChildren<Camera>();
+        dialogueCamera = GetComponentInChildren<Camera>();
         currentTarget = targets[0];
-        currentState = State.Walking;
+        currentState = State.Idle;
+        //Emotion Dictionary
+        var values = Enum.GetValues(typeof(Emotion));
+        foreach(Emotion e in Enum.GetValues(typeof(Emotion)))
+        {
+            int i = (int)e;
+            emotionSfxDictionary.Add(e, emotionSFX[i]);
+            emotionAnimDictionary.Add(e, emotionAnim[i]);
+        }
     }
     private void Start()
     {
+
     }
     private void Update()
     {
@@ -95,9 +121,4 @@ public class CharacterHandler : MonoBehaviour
     //{
     //    return myDialogue;
     //}
-    public Camera GetMyCamera()
-    {
-        return myCamera;
-    }
-
 }

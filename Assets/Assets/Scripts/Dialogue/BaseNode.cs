@@ -9,4 +9,12 @@ public class BaseNode : Node {
     {
         return null;
     }
+    public virtual bool GetBool()
+    {
+        return true;
+    }
+    public virtual void UnlockInformation()
+    {
+        return;
+    }
 }

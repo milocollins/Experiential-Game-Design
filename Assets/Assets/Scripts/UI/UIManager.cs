@@ -10,7 +10,6 @@ public class UIManager : MonoBehaviour
     public Text tooltip;
     public bool tooltipBool = false;
     public Text interactiveSubtitle;
-    public GameObject dialoguePanel;
 
     [Header("Dialogue Buttons")]
     public List<GameObject> dialogueButtons = new List<GameObject>();
@@ -25,7 +24,6 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         tooltip.gameObject.SetActive(false);
-        dialoguePanel.SetActive(false);
         interactiveSubtitle.text = "";
     }
     private void Update()
@@ -41,11 +39,6 @@ public class UIManager : MonoBehaviour
                 Journal.theJournal.ToggleMap();
             }
         }
-    }
-    public void ToggleDialoguePanel()
-    {
-        dialoguePanel.SetActive(!dialoguePanel.activeInHierarchy);
-        ResetTooltip();
     }
     public void SetDialogueSubtitle(string s)
     {

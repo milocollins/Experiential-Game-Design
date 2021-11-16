@@ -21,7 +21,11 @@ public class DialogueNode : BaseNode {
     {
         return myCharacter.name + "/" + dialogueText;
     }
-	public void UnlockInformation()
+    public override bool GetBool()
+    {
+        return isLocked;
+    }
+	public override void UnlockInformation()
     {
         if (myMotive)
         {
